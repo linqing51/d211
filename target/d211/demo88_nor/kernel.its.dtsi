@@ -11,10 +11,10 @@
 	images {
 		kernel {
 			description = "Artinchip Linux kernel";
-			data = /incbin/("./Image.xz");
+			data = /incbin/("./Image.gz");
 			type = "kernel";
 			arch = "riscv";
-			compression = "xz";
+			compression = "gzip";
 			os = "linux";
 			load =  <0x40000000>;
 			entry = <0x40000000>;
